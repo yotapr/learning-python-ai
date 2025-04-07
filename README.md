@@ -134,17 +134,15 @@ Vantaggi dell'utilizzo di pipeline:
 Esempi di utilizzo:
 Python
 
-from transformers import pipeline
-
-# Analisi del sentiment
+**Analisi del sentiment**
 sentiment_analysis = pipeline("sentiment-analysis")
 print(sentiment_analysis("I love Hugging Face!"))
 
-# Risposta a domande
+**Risposta a domande**
 question_answerer = pipeline("question-answering")
 print(question_answerer(question="Where do I live?", context="My name is Sarah and I live in London"))
 
-# Traduzione
+**Traduzione**
 translator = pipeline("translation_en_to_de")
 print(translator("Hello, how are you?"))
 
